@@ -108,7 +108,7 @@ public class StatsCommand extends AbstractCommand {
 		// Player has received all achievement; play special effect and sound.
 		if (playerAchievements >= totalAchievements) {
 			if (configAdditionalEffects) {
-				player.spawnParticle(Particle.SPELL_WITCH, player.getLocation(), 400, 0, 1, 0, 0.5f);
+				player.spawnParticle(Particle.WITCH, player.getLocation(), 400, 0, 1, 0, 0.5f);
 			}
 
 			if (configSound) {

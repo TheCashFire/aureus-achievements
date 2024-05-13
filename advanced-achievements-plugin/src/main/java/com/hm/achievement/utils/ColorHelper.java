@@ -36,10 +36,10 @@ public class ColorHelper {
 				return Color.fromRGB(0xFF, 0x55, 0xFF);
 			case RED:
 				return Color.fromRGB(0xFF, 0x55, 0x55);
-            case YELLOW:
+			case YELLOW:
 				return Color.fromRGB(0xFF, 0xFF, 0x55);
-            case WHITE:
-            default:
+			case WHITE:
+			default:
 				return Color.WHITE;
 		}
 	}
@@ -47,27 +47,27 @@ public class ColorHelper {
 	public static BarColor convertChatColorToBarColor(ChatColor chatColor) {
 		switch (chatColor) {
 			case AQUA:
-            case DARK_GREEN:
-            case GREEN:
-                return BarColor.GREEN;
+			case DARK_GREEN:
+			case GREEN:
+				return BarColor.GREEN;
 			case BLACK:
-            case DARK_GRAY:
-            case DARK_PURPLE:
-            case LIGHT_PURPLE:
-                return BarColor.PURPLE;
+			case DARK_GRAY:
+			case DARK_PURPLE:
+			case LIGHT_PURPLE:
+				return BarColor.PURPLE;
 			case BLUE:
-            case DARK_AQUA:
-            case DARK_BLUE:
-                return BarColor.BLUE;
-            case DARK_RED:
-            case RED:
-                return BarColor.RED;
+			case DARK_AQUA:
+			case DARK_BLUE:
+				return BarColor.BLUE;
+			case DARK_RED:
+			case RED:
+				return BarColor.RED;
 			case GOLD:
-            case YELLOW:
-                return BarColor.YELLOW;
-            case GRAY:
-            case WHITE:
-            default:
+			case YELLOW:
+				return BarColor.YELLOW;
+			case GRAY:
+			case WHITE:
+			default:
 				return BarColor.WHITE;
 		}
 	}

@@ -1,7 +1,7 @@
 name: AdvancedAchievements
 main: com.hm.achievement.AdvancedAchievements
 version: 8.0.2
-author: DarkPyves
+authors: [DarkPyves,petulikan1]
 softdepend: [Vault,PetMaster,Essentials,PlaceholderAPI,Jobs]
 description: Advanced Achievements enables unique and challenging achievements. Try to collect as many as you can, earn rewards, climb the rankings and receive RP books!
 website: https://github.com/PyvesB/advanced-achievements

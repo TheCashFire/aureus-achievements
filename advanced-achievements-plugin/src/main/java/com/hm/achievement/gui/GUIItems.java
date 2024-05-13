@@ -101,15 +101,10 @@ public class GUIItems implements Reloadable {
 		achievementNotStartedDefault = new ItemStack(Material.RED_TERRACOTTA, 1);
 		achievementStartedDefault = new ItemStack(Material.YELLOW_TERRACOTTA, 1);
 		achievementReceivedDefault = new ItemStack(Material.LIME_TERRACOTTA, 1);
-		for (String type : guiConfig.getConfigurationSection("AchievementNotStarted").getKeys(false)) {
-			achievementNotStarted.put(type, createItemStack("AchievementNotStarted." + type));
-		}
-		for (String type : guiConfig.getConfigurationSection("AchievementStarted").getKeys(false)) {
-			achievementStarted.put(type, createItemStack("AchievementStarted." + type));
-		}
-		for (String type : guiConfig.getConfigurationSection("AchievementReceived").getKeys(false)) {
-			achievementReceived.put(type, createItemStack("AchievementReceived." + type));
-		}
+
+		achievementNotStarted.put("Item", createItemStack("AchievementNotStarted"));
+		achievementStarted.put("Item", createItemStack("AchievementStarted"));
+		achievementReceived.put("Item", createItemStack("AchievementReceived"));
 		previousButton = createButton("PreviousButton", "list-previous-message", "list-previous-lore");
 		nextButton = createButton("NextButton", "list-next-message", "list-next-lore");
 		backButton = createButton("BackButton", "list-back-message", "list-back-lore");

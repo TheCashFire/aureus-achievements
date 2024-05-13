@@ -332,7 +332,7 @@ public class PlayerAdvancedAchievementListener implements Listener, Reloadable {
 	 */
 	private void displaySimplifiedReception(Player player) {
 		player.playSound(player.getLocation(), Sound.valueOf("ENTITY_PLAYER_LEVELUP"), 1, 0.7f);
-		player.spawnParticle(Particle.FIREWORKS_SPARK, player.getLocation(), 500, 0, 3, 0, 0.1f);
+		player.spawnParticle(Particle.FIREWORK, player.getLocation(), 500, 0, 3, 0, 0.1f);
 	}
 
 	/**
